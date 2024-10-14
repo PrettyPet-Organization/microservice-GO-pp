@@ -20,29 +20,4 @@ lint:
 integration-test: 
 	go clean -testcache && go test -v ./test/integration-test/...
 
-# .PHONY: migrate create
-# migrate create:
-
-# .PHONY: migrate up
-# migrate up:
-
-# .PHONY: migrate down
-# migrate down:
-
-# .PHONY: swag
-# swag:
-# 	swag init
-
-# .PHONY: compose up
-# compose up:
-# 	docker-compose up --build -d 
-
-# .PHONY: compose down
-# compose down:
-# 	docker-compose down --remove-orphans
-
-# .PHONY: docker-rm-volume
-# docker-rm-volume: 
-# 	docker volume rm 
-
 .DEFAULT_GOAL := build
